@@ -1,10 +1,16 @@
-import Image from "next/image";
-import Typography from "@mui/material/Typography";
-import Slider from "@madzadev/image-slider";
+import { Container } from "@mui/material";
 import "@madzadev/image-slider/dist/index.css";
 
 import ProductSlider from "@/components/ProductSlider";
+import ProductItem from "@/components/ProductItem";
 
 export default function Home() {
-  return <ProductSlider />;
+  return (
+    <>
+      <ProductSlider />
+      <Container maxWidth="lg">
+        <ProductItem />
+      </Container>
+    </>
+  );
 }
