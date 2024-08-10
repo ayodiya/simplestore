@@ -4,18 +4,20 @@ import Slider from "@madzadev/image-slider";
 import "@madzadev/image-slider/dist/index.css";
 import "@madzadev/image-slider/dist/index.css";
 
-import productImage1 from "../public/testImageSlider1.jpeg";
-import productImage2 from "../public/testImageSlider2.jpeg";
-import productImage3 from "../public/testImageSlider3.jpeg";
-import productImage4 from "../public/testImageSlider4.jpeg";
-import productImage5 from "../public/testImageSlider5.jpeg";
+import slider1 from "../public/slider1.jpeg";
+import slider2 from "../public/slider2.jpeg";
+import slider3 from "../public/slider3.jpeg";
+import slider4 from "../public/slider4.jpeg";
+import slider5 from "../public/slider5.jpeg";
+import slider6 from "../public/slider6.jpeg";
 
 const images = [
-  { url: productImage1.src },
-  { url: productImage2.src },
-  { url: productImage3.src },
-  { url: productImage4.src },
-  { url: productImage5.src },
+  { url: slider1.src },
+  { url: slider2.src },
+  { url: slider3.src },
+  { url: slider4.src },
+  { url: slider5.src },
+  { url: slider6.src },
 ];
 
 export default function ProductSlider() {
@@ -29,7 +31,7 @@ export default function ProductSlider() {
         showDotControls={false}
         imageList={images}
         width="100%"
-        height="100%"
+        height="400px"
       />
     </>
   );
